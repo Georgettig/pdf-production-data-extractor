@@ -1,4 +1,4 @@
-<img width="1200" height="590" alt="upload" src="https://github.com/user-attachments/assets/2cf33fb7-0b16-4a65-bf39-8e8e7262cec4" /># 📄 PDF Production Data Extractor
+# 📄 PDF Production Data Extractor
 
 Sistema desenvolvido em Python para automatizar a extração, tratamento e armazenamento de dados provenientes de relatórios de produção em formato PDF.
 
