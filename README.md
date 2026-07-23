@@ -243,6 +243,6 @@ streamlit run app.py
 
 **Guilherme Georgetti Albuquerque Galvão**
 
-Engenheiro de Produção — UNESP
+Analista de Dados / Engenheiro de Produção — UNESP
 
 🔗 LinkedIn: *www.linkedin.com/in/guilherme-georgetti*
