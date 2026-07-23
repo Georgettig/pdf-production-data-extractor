@@ -25,12 +25,19 @@ Por conta disso, o sistema foi desenvolvido para:
 # 🚀 Funcionalidades
 
 ✅ Upload de relatórios PDF
+
 ✅ Identificação automática da máquina de origem
+
 ✅ Extração automática dos indicadores de produção
+
 ✅ Tratamento e padronização dos dados
+
 ✅ Cadastro automático dos produtos
+
 ✅ Armazenamento em banco de dados SQLite
+
 ✅ Prevenção de registros duplicados
+
 ✅ Consulta de dados através de interface Streamlit
 
 ## 🏗 Arquitetura do projeto
@@ -38,28 +45,28 @@ Por conta disso, o sistema foi desenvolvido para:
 pdf-production-data-extractor/
 │
 ├── database/
-│   ├── database.py          # 
-│   ├── models.py            #
-│   └── repository.py        #
+│   ├── database.py          # Configuração da conexão e criação do banco de dados
+│   ├── models.py            # Modelos ORM das tabelas (SQLAlchemy)
+│   └── repository.py        # Camada de acesso e envio dos dados
 │  
 ├── exemplos/
-│   ├── 17072601.pdf         #
-│   ├── 20072601.pdf         #
-│   └── 220072601.pdf        #
+│   ├── 17072601.pdf         # Exemplo de relatório da Máquina 1
+│   ├── 20072601.pdf         # Exemplo de relatório da Máquina 1
+│   └── 220072601.pdf        # Exemplo de relatório da Máquina 2
 │
 ├── machines/
-│   ├── factory.py           #
-│   └── machine.py           #
+│   ├── factory.py           # Identifica a máquina pelo nome do arquivo 
+│   └── machine.py           # Cria e instancia a classe "Machine" 
 │
 ├── parsers/
-│   ├── helpers.py           #
-│   └── parser.py            #
+│   ├── helpers.py           # Funções auxiliares para extração e tratamento dos dados
+│   └── parser.py            # Lógica de leitura e extração das informações dos PDFs
 │
-├── app.py                   #
-├── extractor.py             #
-├── models.py                #
-├── requirements.txt         #
-└── README.md
+├── app.py                   # Interface da aplicação desenvolvida com Streamlit
+├── extractor.py             # Orquestra todo fluxo de extração e processamento dos relatórios
+├── models.py                # Modelos de domínio utilizados pela aplicação
+├── requirements.txt         # Bibliotecas utilizadas no projeto
+└── README.md                # Documentação do projeto
 ```
 
 ## 🔄 Fluxo do processamento
@@ -238,4 +245,4 @@ streamlit run app.py
 
 Engenheiro de Produção — UNESP
 
-🔗 LinkedIn: *linkedin.com/in/guilherme-georgetti*
+🔗 LinkedIn: *www.linkedin.com/in/guilherme-georgetti*
