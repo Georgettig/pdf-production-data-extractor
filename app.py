@@ -12,9 +12,9 @@ from database.models import RoloReport
 
 Base.metadata.create_all(bind=engine)
 
-st.set_page_config(page_title="Relatório de Rolos", layout="wide")
+st.set_page_config(page_title="PDF Data Extractor", layout="wide")
 
-st.title("Extrator de Relatório de Rolos")
+st.title("PDF Data Extractor")
 
 uploaded_files = st.file_uploader("Envie o(s) PDF(s)", type=["pdf"], accept_multiple_files=True)
 
